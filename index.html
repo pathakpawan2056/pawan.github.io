@@ -1,0 +1,675 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Nunito&display=swap" rel="stylesheet">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <title>JOBHUB-BUTWAL</title>
+
+
+</head>
+
+<body>
+    <div class="navbar-one flex">
+        <div class="left flex">
+            <div class="email">
+                <i class="fa fa-envelope"></i>
+                <span>pathakpawan123@gmail.com</span>
+            </div>
+
+            <div class="contact">
+                <i class="fa fa-phone-alt"></i>
+                <span>9866043966</span>
+            </div>
+        </div>
+        <div class="right flex">
+            <div class="form-button">
+                <button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'"
+                    style="width:auto;"> <a href="Login/login.html"><i class="fa fa-user"
+                            aria-hidden="true">LOGIN</i></a></button>
+                <button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'"
+                    style="width:auto;"> <a href="signup/SignUp.html"><i class="fa fa-user-plus" aria-hidden="true">SIGN
+                            UP</i></a></button>
+            </div>
+        </div>
+    </div>
+    <!-- navbar start from here  -->
+    <nav class="navbar">
+        <h2 class="navbar-logo">
+            <a href="#">
+                <JOBHU class="fa fa-home" aria-hidden="true">JOBHU<span>B</span>UTWAL</i>
+            </a>
+        </h2>
+
+
+
+        <div class="navbar-menu">
+
+            <a href='#jobs'><i class="fa fa-briefcase" aria-hidden="true">Jobs</i></a>
+            <a href='#companies'><i class="fa fa-building" aria-hidden="true">Companies</i></a>
+            <a href='#testimoni'><i class="fa fa-certificate" aria-hidden="true">Testomonial</i></a>
+            <a href='#blog'><i class="fa fa-book" aria-hidden="true">Blog</i></a>
+            <a href='#daily-post'><i class="fa fa-address-book" aria-hidden="true">Posts</i></a>
+
+        </div>
+        <div class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+
+    <!-- Now Header are start here   -->
+    <header>
+
+        <h1 class="header-title">
+            FIND YOUR<br> <span>PERFTECT JOB</span> <br> EASILY
+        </h1>
+    </header>
+
+    <!-- search -->
+    <div class="search-wrapper">
+        <div class="search-box">
+            <div class="search-card">
+                <!-- <input class="search-input" type="text" placeholder="Search by job Title">
+                <button class="search-button"> Search Jobs</button> -->
+
+
+                <input type="text" class="search-field bussiness" placeholder="Bussiness,services..">
+
+                <input type="text" class="search-field location" placeholder="location">
+                <button class="search-button"> Search</button> 
+
+            </div>
+        </div>
+    </div>
+
+    <!-- filter box -->
+    <div class="filter-box">
+        <div class="filter-drowpdown">
+            <select class="filter-select" name="job-level" id="job-level">
+                <option>Job Level</option>
+                <option>Entry</option>
+                <option>Mid-Senior</option>
+                <option>Director</option>
+            </select>
+            <select class="filter-select" name="job-function" id="job-function">
+                <option>Job Function</option>
+                <option>IT</option>
+                <option>Management</option>
+                <option>Eduction</option>
+            </select>
+            <select class="filter-select" name="employment" id="employment">
+                <option>Employment Type</option>
+                <option>Internship</option>
+                <option>Part Time</option>
+                <option>Full Time</option>
+            </select>
+            <select class="filter-select" name="location" id="location">
+                <option>Location</option>
+                <option>Remote</option>
+                <option>US</option>
+                <option>UK</option>
+            </select>
+            <select class="filter-select" name="education" id="education">
+                <option>Education</option>
+                <option>Remote</option>
+                <option>US</option>
+                <option>UK</option>
+            </select>
+        </div>
+        <div class="filter-chosen">
+            <div class="chosen-card">
+                Remote <i class="fas fa-times-circle"></i>
+            </div>
+            <div class="chosen-card">
+                Full Time <i class="fas fa-times-circle"></i>
+            </div>
+            <div class="chosen-card">
+                financial Tech <i class="fas fa-times-circle"></i>
+            </div>
+            <div class="chosen-card">
+                Entry Level <i class="fas fa-times-circle"></i>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- job Listing -->
+    <!-- <section class="job-list" id="jobs">
+        <div class="job-card">
+            <div class="job-name">
+                <img class="job-porfile" src="images/tesla.jpg">
+                <div class="job-detail">
+                    <h4>Tesla</h4>
+                    <h3>Mechanical Engineer</h3>
+                    <p>pawan pathak</p>
+                </div>
+            </div>
+            <div class="job-lebel">
+                <a href="#" class="label-a">HTML</a>
+                <a href="#" class="label-b">CSS</a>
+                <a href="#" class="label-c">Javascript</a>
+            </div>
+            <div class="job-posted">
+                posted 2 mins ago.
+            </div>
+        </div>
+        <div class="job-card">
+            <div class="job-name">
+                <img class="job-porfile" src="images/tesla.jpg">
+                <div class="job-detail">
+                    <h4>Tesla</h4>
+                    <h3>Mechanical Engineer</h3>
+                    <p>pawan pathak</p>
+                </div>
+            </div>
+            <div class="job-lebel">
+                <a href="#" class="label-a">HTML</a>
+                <a href="#" class="label-b">CSS</a>
+                <a href="#" class="label-c">Javascript</a>
+            </div>
+            <div class="job-posted">
+                posted 2 mins ago.
+            </div>
+        </div>
+        <div class="job-card">
+            <div class="job-name">
+                <img class="job-porfile" src="images/tesla.jpg">
+                <div class="job-detail">
+                    <h4>Tesla</h4>
+                    <h3>Mechanical Engineer</h3>
+                    <p>pawan pathak</p>
+                </div>
+            </div>
+            <div class="job-lebel">
+                <a href="#" class="label-a">HTML</a>
+                <a href="#" class="label-b">CSS</a>
+                <a href="#" class="label-c">Javascript</a>
+            </div>
+            <div class="job-posted">
+                posted 2 mins ago.
+            </div>
+        </div>
+        <button class="job-more">More List</button>
+    </section>  -->
+
+
+<!-- jobs details are here -->
+    <section class="con" id="jobs">
+        <h1 class="section">Top Jobs</h1>
+        <div class="con-wrapper">
+            <div class="con-card">
+                <div class="one">
+                    <img class="con-image" src="images/ebay.jpg">
+                    <!-- <p> &#x2022; Ebay</p> -->
+                    <!-- <button class="con-button">View 2 job</button> -->
+                </div>
+            </div>
+            <div class="con-card">
+                <img class="con-image" src="images/youtube.jpg">
+                <p> &#x2022; Youtube</p>
+                <button class="con-button">View 2 job</button>
+            </div>
+            <div class="con-card">
+                <img class="con-image" src="images/facebook .jpg">
+                <p>&#x2022; Facebook</p>
+                <button class="con-button">View 2 job</button>
+            </div>
+            <div class="con-card">
+                <img class="con-image" src="images/tesla.jpg">
+                <p>&#x2022; Tesla</p>
+                <button class="con-button">View 9 job</button>
+            </div>
+            <div class="con-card">
+                <img class="con-image" src="images/google.jpg">
+                <p>&#x2022; Google</p>
+                <button class="con-button">View 3 job</button>
+            </div>
+            <div class="con-card">
+                <img class="con-image" src="images/tiktok.jpg">
+                <p>&#x2022; Tiktok</p>
+                <button class="con-button">View 2 job</button>
+            </div>
+            <div class="con-card">
+                <img class="con-image" src="images/apple.jpg">
+                <p>&#x2022; Apple</p>
+                <button class="con-button">View 7 job</button>
+            </div>
+            <div class="con-card">
+                <img class="con-image" src="images/amazon.jpg">
+                <p>&#x2022; Amazon</p>
+                <button class="con-button">View 2 job</button>
+            </div>
+        </div>
+        <h4 class="list">More List &#8594;</h4>
+    </section>
+    <!-- jobs details end here -->
+
+    <!-- join -->
+    <section class="join">
+        <div class="join-detail">
+            <h1 class="section-title">LETS START YOUR NEW JOBS WITH US</h1>
+            <p>my name is pawan pathak</p>
+        </div>
+        <button class="join-button">Join Now</button>
+    </section>
+
+    <!-- featured company-->
+    <!-- &#x2022; this is . sign -->
+    <section class="featured" id="companies">
+        <h1 class="section-title">Feature Companies</h1>
+        <p>hello how are you</p>
+        <div class="features-wrapper">
+            <div class="features-card">
+                <img class="featured-image" src="images/ebay.jpg">
+                <p>&#x2022; Ebay</p>
+                <button class="features-button">View 1 job</button>
+            </div>
+            <div class="features-card">
+                <img class="featured-image" src="images/youtube.jpg">
+                <p>&#x2022; Youtube</p>
+                <button class="features-button">View 2 job</button>
+            </div>
+            <div class="features-card">
+                <img class="featured-image" src="images/facebook .jpg">
+                <p>&#x2022; Facebook</p>
+                <button class="features-button">View 2 job</button>
+            </div>
+            <div class="features-card">
+                <img class="featured-image" src="images/tesla.jpg">
+                <p>&#x2022; Tesla</p>
+                <button class="features-button">View 9 job</button>
+            </div>
+            <div class="features-card">
+                <img class="featured-image" src="images/google.jpg">
+                <p>&#x2022; Google</p>
+                <button class="features-button">View 3 job</button>
+            </div>
+            <div class="features-card">
+                <img class="featured-image" src="images/tiktok.jpg">
+                <p>&#x2022; Tiktok</p>
+                <button class="features-button">View 2 job</button>
+            </div>
+            <div class="features-card">
+                <img class="featured-image" src="images/apple.jpg">
+                <p>&#x2022; Apple</p>
+                <button class="features-button">View 7 job</button>
+            </div>
+            <div class="features-card">
+                <img class="featured-image" src="images/amazon.jpg">
+                <p>&#x2022; Amazon</p>
+                <button class="features-button">View 2 job</button>
+            </div>
+        </div>
+        <button class="job-more">More List</button>
+    </section>
+    <!-- featured company end here -->
+
+    <!-- testimoni -->
+    <section class="testimoni" id="testimoni">
+        <h1 class="section-title">Testimoni</h1>
+        <P>Lets see what our clients say about us</P>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <i class="fas fa-quote-left"></i>
+                    <h3>our nepal country is most famous in the world.</h3>
+                    <div class="testimoni-pic">
+                        <img src="images/profile3.jpg">
+                        <p>Pawan Pathak</p>
+                        <span>Bussiness Development</span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <i class="fas fa-quote-left"></i>
+                    <h3>our nepal country is most famous in the world.</h3>
+                    <div class="testimoni-pic">
+                        <img src="images/profile1.jpg">
+                        <p>kamal Pathak</p>
+                        <span>website Development</span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <i class="fas fa-quote-left"></i>
+                    <h3>hello how are you.</h3>
+                    <div class="testimoni-pic">
+                        <img src="images/profile2.jpg">
+                        <p>krishana Pathak</p>
+                        <span>Data Analyzer</span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <i class="fas fa-quote-left"></i>
+                    <h3>our nepal country is most famous in the world.</h3>
+                    <div class="testimoni-pic">
+                        <img src="images/profile2.jpg">
+                        <p>krishana Pathak</p>
+                        <span>Data Analyzer</span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <i class="fas fa-quote-left"></i>
+                    <h3>our nepal country is most famous in the world.</h3>
+                    <div class="testimoni-pic">
+                        <img src="images/profile2.jpg">
+                        <p>krishana Pathak</p>
+                        <span>Data Analyzer</span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <i class="fas fa-quote-left"></i>
+                    <h3>our nepal country is most famous in the world.</h3>
+                    <div class="testimoni-pic">
+                        <img src="images/profile2.jpg">
+                        <p>krishana Pathak</p>
+                        <span>Data Analyzer</span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <i class="fas fa-quote-left"></i>
+                    <h3>our nepal country is most famous in the world.</h3>
+                    <div class="testimoni-pic">
+                        <img src="images/profile2.jpg">
+                        <p>krishana Pathak</p>
+                        <span>Data Analyzer</span>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- blog -->
+    <section class="blog" id="blog">
+        <h1 class="section-title">Career Advices</h1>
+        <p>Learn more career tips from Company's receiver</p>
+        <div class="bolg-wrapper">
+            <div class="blog-card">
+                <img src="images/blog-img1.jpg" class="blog-imgs">
+                <div class="blog-detail">
+                    <span>11 apr 2022</span>
+                    <h4>Pawan Pathak</h4>
+                    <p>Web Development</p>
+                    <hr class="divider">
+                    <a href="#" class="blog-more">Read More</a>
+                </div>
+            </div>
+            <div class="blog-card">
+                <img src="images/blog-img2.jpg" class="blog-imgs">
+                <div class="blog-detail">
+                    <span>11 apr 2022</span>
+                    <h4>Kamal Pathak</h4>
+                    <p>Data Analyzer</p>
+                    <hr class="divider">
+                    <a href="#" class="blog-more">Read More</a>
+                </div>
+            </div>
+            <div class="blog-card">
+                <img src="images/blog-img3.jpg" class="blog-imgs">
+                <div class="blog-detail">
+                    <span>11 apr 2022</span>
+                    <h4>Ganesh Pathak</h4>
+                    <p>Product Analyzer</p>
+                    <hr class="divider">
+                    <a href="#" class="blog-more">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- post detail start -->
+    <div class="container" id="daily-post">
+
+        <h1 class="heading">our daily posts</h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/img1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>blog title goes here</h3>
+                    <p>hello namaste!</p>
+                    <a href="#" class="btn">read more</a>
+                    <div class="icons">
+                        <span> <i class="fas fa-calendar"></i> 21st may, 2022 </span>
+                        <span> <i class="fas fa-user"></i> by admin </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/img2.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>blog title goes here</h3>
+                    <p>hello namaste!</p>
+                    <a href="#" class="btn">read more</a>
+                    <div class="icons">
+                        <span> <i class="fas fa-calendar"></i> 21st may, 2022 </span>
+                        <span> <i class="fas fa-user"></i> by admin </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/img3.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>blog title goes here</h3>
+                    <p>hello namaste!</p>
+                    <a href="#" class="btn">read more</a>
+                    <div class="icons">
+                        <span> <i class="fas fa-calendar"></i> 21st may, 2022 </span>
+                        <span> <i class="fas fa-user"></i> by admin </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/img4.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>blog title goes here</h3>
+                    <p>hello namaste!</p>
+                    <a href="#" class="btn">read more</a>
+                    <div class="icons">
+                        <span> <i class="fas fa-calendar"></i> 21st may, 2022 </span>
+                        <span> <i class="fas fa-user"></i> by admin </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/img5.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>blog title goes here</h3>
+                    <p>hello namaste!</p>
+                    <a href="#" class="btn">read more</a>
+                    <div class="icons">
+                        <span> <i class="fas fa-calendar"></i> 21st may, 2022 </span>
+                        <span> <i class="fas fa-user"></i> by admin </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/img6.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>blog title goes here</h3>
+                    <p>hello namaste!</p>
+                    <a href="#" class="btn">read more</a>
+                    <div class="icons">
+                        <span> <i class="fas fa-calendar"></i> 21st may, 2022 </span>
+                        <span> <i class="fas fa-user"></i> by admin </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/img7.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>blog title goes here</h3>
+                    <p>hello namaste!</p>
+                    <a href="#" class="btn">read more</a>
+                    <div class="icons">
+                        <span> <i class="fas fa-calendar"></i> 21st may, 2022 </span>
+                        <span> <i class="fas fa-user"></i> by admin </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/img8.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>blog title goes here</h3>
+                    <p>hello namaste!</p>
+                    <a href="#" class="btn">read more</a>
+                    <div class="icons">
+                        <span> <i class="fas fa-calendar"></i> 21st may, 2022 </span>
+                        <span> <i class="fas fa-user"></i> by admin </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/img9.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>blog title goes here</h3>
+                    <p>hello namaste!</p>
+                    <a href="#" class="btn">read more</a>
+                    <div class="icons">
+                        <span> <i class="fas fa-calendar"></i> 21st may, 2022 </span>
+                        <span> <i class="fas fa-user"></i> by admin </span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="load-more"> Read More </div>
+
+    </div>
+
+    <script>
+
+        let loadMoreBtn = document.querySelector('#load-more');
+        let currentItem = 3;
+
+        loadMoreBtn.onclick = () => {
+            let boxes = [...document.querySelectorAll('.container .box-container .box')];
+            for (var i = currentItem; i < currentItem + 3; i++) {
+                boxes[i].style.display = 'inline-block';
+            }
+            currentItem += 3;
+
+            if (currentItem >= boxes.length) {
+                loadMoreBtn.style.display = 'none';
+            }
+        }
+
+    </script>
+
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-wrapper">
+            <h3>JOBHU<span>B</span>UTWAL</h3>
+            <p class="small text-justify">
+                Since inception in 2009, we have turned out to be number one jobs provider in Nepal with 300
+                million+ page views with 6.5 million+ progressive visits every month, created 2,00,000+ success stories
+                and registered 7,50,000+ job seekers in our database. We have been offering 35,000+ employers
+                promote their employer brands to jobseekers and advertise diverse opportunities to over a million
+                candidates inside Nepal and abroad. Established as an inevitable bridge between the hiring employers
+                and the job seekers, we are well-known as a national leader in recruitment solutions &amp; career
+                management in Nepal. <a href="about" target="_blank" class="text-secondary">Read more...</a>
+            </p>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footer-wrapper">
+            <h4 class="exolore">EXPLORE</h4>
+            <a href="#">Top Companies</a>
+            <a href="#">Terms of services</a>
+            <a href="#">Podcast</a>
+            <a href="#">Careers</a>
+            <a href="#">Top Companies</a>
+            <a href="#">Terms of services</a>
+        </div>
+
+        <div class="footer-wrapper">
+            <h4 class="support">SUPPORT</h4>
+            <a href="#">Customer service</a>
+            <a href="#">Trust & Safety</a>
+            <a href="#">Partnership</a>
+            <a href="#">Customer service</a>
+            <a href="#">Trust & Safety</a>
+            <a href="#">Partnership</a>
+        </div>
+        <div class="footer-wrapper">
+            <h4 class="community">COMMUNITY</h4>
+            <a href="#">Community</a>
+            <a href="#">Invite a Friend</a>
+            <a href="#">Event</a>
+            <a href="#">Community</a>
+            <a href="#">Invite a Friend</a>
+            <a href="#">Event</a>
+        </div>
+        </div>
+        <div class="footer-wrapper">
+            <h4 class="about">ABOUT</h4>
+            <a href="#">FAQ</a>
+            <a href="#">Get Inspired</a>
+            <a href="#">Blog</a>
+            <a href="#">FAQ</a>
+            <a href="#">Get Inspired</a>
+            <a href="#">Blog</a>
+        </div>
+
+        <div class="footer-wrapper">
+            <h4 class="contact as">CONTACT US</h4>
+            <i class="fa-solid fa-location-dot"></i>
+            Butwal Multiple Campus<br>Golpark
+            ICT LAB<br>Butwal Rupandehi, Nepal
+
+            <a href="tel:+977-9898765432" class="text-white-50 mb-1 mt-1">+977 1 4106701</a>
+            <a href="tel:+977-9812345678" class="text-white-50 mb-1 mt-1">+977 1 4106700</a>
+
+            <a class="text-white-50" href="mailto:info@jobhubutwal.com">info@jobhubutwal.com</a>
+
+    </footer>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.code/jquery-2.2.4.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
