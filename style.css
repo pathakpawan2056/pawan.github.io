@@ -239,7 +239,7 @@ header {
   cursor: pointer;
 }
 .search-field{
-  width: 325px;
+  width: 130px;
 }
 
 .input {
@@ -858,6 +858,7 @@ p {
   }
 }
 
+
 /* post  */
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap");
@@ -872,10 +873,6 @@ p {
   text-decoration: none;
   text-transform: capitalize;
   transition: all 0.2s linear;
-}
-
-body {
-  background-color: #dc143c22;
 }
 
 .container {
